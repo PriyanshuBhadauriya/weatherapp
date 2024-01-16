@@ -38,10 +38,10 @@ function Tempapp() {
             
         
         
-        <h1 className='temp'>{kelvinToFarenheit(city?.main?.temp)}&deg; C</h1>
-        <h1 className='temp'>{kelvinToFarenheit(city?.main?.feels_like)}&deg; C</h1>
-        <h1 className='temp'>{city?.sys?.country}</h1>
-        <h1>{city?.visibility} Meter</h1>
+        <h1 className='temp'>Temperature: {kelvinToFarenheit(city?.main?.temp)}&deg; C</h1>
+        <h1 className='temp'>Feels Like: {kelvinToFarenheit(city?.main?.feels_like)}&deg; C</h1>
+        <h1 className='temp'>Country: {city?.sys?.country}</h1>
+        <h1>Visibility: {city?.visibility} Meter</h1>
         <h3 className='tempin_max'>Min :{kelvinToFarenheit(city?.main?.temp_min)}&deg; C| Max:{kelvinToFarenheit(city?.main?.temp_max)}&deg; C</h3>
     </div>
    
